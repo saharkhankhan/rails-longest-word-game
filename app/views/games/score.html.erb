@@ -1,0 +1,11 @@
+
+<div class="container">
+  <h1>Results</h1>
+  <p> Your Word: <%= @word %></p>
+  <p><%= @score %></p>
+  <%=link_to "Have another go?", new_path, :class => "btn-primary p-2 rounded" %>
+
+  <p class="pt-4">Your Total Score is: <%= session[:grand_total] %></p>
+</div>
+
+
