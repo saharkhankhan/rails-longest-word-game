@@ -17,11 +17,11 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   driven_by :headless_chrome
 
   class GamesTest < ApplicationSystemTestCase
-    # test "Going to /new gives us a new random grid to play with" do
-    #   visit new_url
-    #   assert test: "New game"
-    #   assert_selector "li", count: 10
-    # end
+    test "Going to /new gives us a new random grid to play with" do
+      visit new_url
+      assert test: "New game"
+      assert_selector ".letter", count: 10
+    end
 
   #   test "Word submitted is not in the grid" do
   #     visit score_url
